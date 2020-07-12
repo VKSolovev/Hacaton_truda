@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <div>
+                <img src="Trud_hack.png" height="50px" style="padding-right: 10px;">
+                <span style="color:#fff; font-size: 30px; position:absolute; top: 10px;">Хакатон труда</span>     
+            </div>
+        </div>
+    </nav>
+    <div class="main" style="background-color: #f9f9f9; padding-top: 70px;">
+        <div class="container" style="height: 1000px; background-color: #fff; padding: 50px;">
+            <h3>Форма заявки</h3>
+
+            <form>
+                <div class="form-row">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Название вакансии">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Название компании">
+                    </div>
+                    <div style="height:60px;"></div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Регион">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Город">
+                    </div>
+                    <div style="height:60px;"></div>
+
+                    <div class="col-4">
+                        <!-- <input type="text" class="form-control" placeholder="Тип занятости"> -->
+                        <select class="form-control">
+                            <option>Тип занятости</option>
+                            <option>Полная занятость</option>
+                            <option>Проектная работа</option>
+                            <option>Частичная занятость</option>
+                            <option>Стажировка</option>
+                          </select>
+                    </div>
+                    
+                    <div class="col-4">
+                        <!-- <input type="text" class="form-control" placeholder="Тип графика"> -->
+                        <select class="form-control">
+                            <option>Тип графика</option>
+                            <option>Полный день</option>
+                            <option>Сменный график</option>
+                            <option>Гибкий график</option>
+                            <option>Удаленная работа</option>
+                            <option>Вахтовый метод</option>
+                          </select>
+                    </div>
+                    <div style="height:60px;"></div>
+
+                    <div class="col-4">
+                        <!-- <input type="text" class="form-control" placeholder="Опыт"> -->
+                        <select class="form-control">
+                            <option>Опыт</option>
+                            <option>От 1 года до 3 лет</option>
+                            <option>От 3 до 6 лет</option>
+                            <option>Более 6 лет</option>
+                            <option>Нет опыта</option>
+                          </select>
+
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Ключевые навыки">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Специализация">
+                    </div>
+                    <div style="height:60px;"></div>
+
+
+                    <div class="col-12">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Описание"></textarea>
+                    </div>
+                    <div class="col-3">
+                        <div style="height:25px;"></div>
+                        <button type="button" id="calcSalbutton" class="btn btn-outline-dark">Рассчитать зарплату</button>
+                        <input id="calcSalinput" type="text" class="form-control hide" value="30000 руб">
+                    </div>
+                </div>
+              </form>
+        </div>
+    </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="master.js"></script>
+</body>
+</html>
